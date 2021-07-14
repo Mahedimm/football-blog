@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+/* impor google  font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* common style or utilities */
@@ -7,7 +7,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   font-family: "Poppins", sans-serif;
 }
 
@@ -35,11 +34,12 @@ header h1 {
   color: #ffffff;
   font-size: 64px;
   line-height: 80px;
-  padding-bottom: 27px;
+  height: 230px;
+  width: 500px;
 }
 header img {
-  height: 430px;
-  width: 550px;
+  height: 26rem;
+  width: 34.375rem;
 }
 h3 {
   font-family: "Poppins", sans-serif;
@@ -59,25 +59,16 @@ p {
   padding-top: 150px;
   padding-bottom: 90px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-.title {
+/* .title  {
   height: 230px;
   width: 458px;
   padding-bottom: 50px;
-}
-.btn {
-  text-decoration: none;
-  background: #3498db;
-  color: #ffffff;
-  font-size: 1rem;
-  padding: 10px 20px 10px 20px;
-}
-.btn:hover {
-  background: #3cb0fd;
-}
+} */
 
+/* player Section */
 .players-container {
   margin-top: 70px;
   display: flex;
@@ -102,15 +93,13 @@ p {
   padding: 15px;
   height: 447px;
 }
-/* .player-thumbnil {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 .blog img {
   height: 256px;
   width: 300px;
 }
+
+/* News highlight scetion */
 
 .highlight-container {
   display: flex;
@@ -122,13 +111,20 @@ p {
   width: 567px;
   height: 427px;
 }
-.title h2 {
+.news-title h2 {
   font-size: 48px;
+  padding-right: 20px;
+  margin: 0;
+  line-height: 80px;
+  height: 230px;
+  width: 500px;
 }
+
+/* buttom section */
 .buttom {
 }
 .buttom-section {
-  background-color: #343a40;
+  background-color: #eeeeee;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
@@ -138,6 +134,8 @@ p {
 }
 .logo img {
 }
+
+/* Style social-media logo */
 .social-media {
   width: 822px;
   height: 203px;
@@ -153,14 +151,14 @@ p {
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 2px 6px 14px 3px #000000;
+  box-shadow: 2px 6px 10px 3px #000000;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -173,7 +171,7 @@ p {
   color: #ffffff;
   padding: 5px 8px;
   border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px #000000;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -200,7 +198,7 @@ p {
 
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px -1px 0px #000000;
 }
 
 .wrapper .instagram:hover,
@@ -240,7 +238,109 @@ p {
 
 .copyright {
   text-align: center;
-  color: #eaf6f6;
-  font-size: 0.75rem;
+  color: #424642;
+  font-size: 0.85rem;
   padding: 20px 0;
 }
+
+/* button stayle */
+.btn {
+  text-decoration: none;
+  background: #3498db;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+}
+.btn:hover {
+  background: #3cb0fd;
+}
+
+/* media queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 480px) {
+  header {
+    width: 360px;
+    height: 695px;
+    padding-left: 16px;
+  }
+  .title {
+  }
+  .top-container {
+    flex-direction: column;
+
+    justify-content: space-evenly;
+  }
+  header h1 {
+    width: 278px;
+    height: 138px;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: left;
+  }
+
+  header img {
+    width: 20.5rem;
+    height: 16.25rem;
+  }
+  .btn {
+    text-align: center;
+  }
+  .blog-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlight-container {
+    flex-direction: column;
+
+    justify-content: space-evenly;
+  }
+  .highlight-thumbnil img {
+    width: 300px;
+    height: 250px;
+  }
+  .news-title {
+    width: 300px;
+    height: 200px;
+  }
+  .news-title h2 {
+    width: 290px;
+    height: 100px;
+
+    text-align: left;
+    font-size: 30px;
+    margin: 0;
+    line-height: 40px;
+  }
+  .buttom-section {
+    background-color: #eeeeee;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 20vh;
+  }
+  .logo img {
+    height: 100px;
+    width: 300px;
+  }
+}
+/* Tab  */
+/* @media only screen and (min-width: 481px) and (max-width: 765px) {
+
+  }
+
+
+
+
+/* laptop */
+/* @media only screen and (min-width: 749px) and (max-width: 1024px) {
+
+}
+/* Desktop */
+/* @media only screen and (min-width: 1025px) {
+  #box-4 {
+ 
+  }
+} */
