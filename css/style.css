@@ -48,6 +48,11 @@ h3 {
   margin-top: 14px;
   margin-bottom: 10px;
 }
+p {
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 0;
+}
 /* top part */
 
 .top-container {
@@ -89,6 +94,8 @@ h3 {
 }
 
 .blog {
+  height: 426;
+  width: 300px;
   display: flex;
   flex-direction: column;
   box-shadow: 10px 10px 40px grey;
@@ -121,7 +128,7 @@ h3 {
 .buttom {
 }
 .buttom-section {
-  background-color: #111111;
+  background-color: #343a40;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
